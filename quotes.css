@@ -14,6 +14,7 @@ div {
     border-radius: 30px;
     margin: 20px;
     text-align: center;
+    align-items: center;
     padding: 60px;
 }
 img {
