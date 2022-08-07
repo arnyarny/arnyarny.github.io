@@ -10,7 +10,8 @@ body {
 }
 div {
     text-align: center;
-    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    z-index: 1;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%, #FFE53B 0%, #FF2525 74%);
     border-radius: 30px;
     margin: 20px;
     align-items: center;
