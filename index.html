@@ -2,31 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="quotes.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Leon's Special Day</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <title>Happy Birthday (Name)!</title>
   </head>
   <body>
-    <div>
-      <img src="images/balloons.png" />
-      <h1>Happy Birthday!</h1>
-      <h2>LEON</h2>
-      <p>
-        Click on the button below to receive <br />
-        a random message created by Arny!
-      </p>
+    <!-- Header -->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/cake1.svg" height="90" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#gift">MY GIFT FOR YOU</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="mid">
+        <h1>Happy Birthday!</h1>
+        <h2>(Name birthday celebrator)</h2>
+        <p>
+          Here you will put a short message <br />
+          and is it going to be in German? <br />
+          It is for you to decide...
+        </p>
+      </div>
+      <object
+        data="images/kid1.svg"
+        width="300"
+        height="300"
+        id="kid1"
+      ></object>
+      <object
+        data="images/kid2.svg"
+        width="300"
+        height="300"
+        id="kid2"
+      ></object>
+      <object
+        data="images/kid3.svg"
+        width="300"
+        height="300"
+        id="kid3"
+      ></object>
+      <object
+        data="images/kid4.svg"
+        width="300"
+        height="300"
+        id="kid4"
+      ></object>
+    </section>
+    <!-- gift -->
+    <section class="gift" id="gift">
+      <!-- slider -->
+      <div class="contain">
+        <div class="row">
+          <div class="box box1">
+            <img src="images/IMG-20221208-WA0000.jpg" />
+          </div>
 
-      <button onclick="generateQuote();">Click Me!</button>
-      <p id="quoteOutput"></p>
-      <p id="authorOutput"></p>
-    </div>
-    <script src="quotes.js"></script>
+          <div class="box box2">
+            <img src="images/IMG-20221208-WA0001.jpg" />
+          </div>
+
+          <div class="box box3">
+            <img src="images/IMG-20221208-WA0002.jpg" />
+          </div>
+
+          <div class="box box4">
+            <img src="images/IMG-20221208-WA0003.jpg" />
+          </div>
+
+          <div class="box box5">
+            <img src="images/IMG-20221208-WA0004.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- random message generator -->
+      <div class="wrapper">
+        <h2>
+          RANDOM MESSAGE <br />
+          GENERATOR
+        </h2>
+        <div class="container">
+          <!-- result box -->
+          <div id="quoteDisplay"></div>
+          <!-- generate button -->
+          <button onclick="newQuote()">Get Quote</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
