@@ -69,7 +69,7 @@ nav {
 .mid h2 {
     margin: 10px 0px 0px 0px;
     color: #00dbde;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
 }
 .mid p {
@@ -167,7 +167,7 @@ nav {
 /* gift */
 .gift {
     width: 100%;
-    background: #86fdff;
+    background: #00DBDE;
     min-height: 100vh;
     padding-top: 20px;
 }
@@ -199,7 +199,7 @@ nav {
 .container {
     margin-top: 10px;
     color: #2e2e2e;
-    font-size: 16px;
+    font-size: 22px;
     width: 100%;
     border-radius: 20px;
     text-align: center;
@@ -227,3 +227,96 @@ nav {
         border: #FC00FF solid 2px;
         transition: 0.5s;
     }
+    #quoteDisplay {
+      font-size: 24px;
+      font-weight: bold;
+      color: #555555;
+    }
+    #card1 {
+      position: absolute;
+      right: 0px;
+      bottom: -400px;
+      background-color: transparent;
+      transition: .3s;
+        }
+  #card1:hover {
+          animation: pulse 1s infinite;
+          transition: .3s;
+        }
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          70% {
+            transform: scale(.9);
+          }
+            100% {
+            transform: scale(1);
+          }
+        }
+        #card2 {
+          position: absolute;
+          right: 1225px;
+          bottom: -350px;
+          background-color: transparent;
+          transition: .3s;
+            }
+      #card2:hover {
+              animation: pulse 1s infinite;
+              transition: .3s;
+            }
+            @keyframes pulse {
+              0% {
+                transform: scale(1);
+              }
+              70% {
+                transform: scale(.9);
+              }
+                100% {
+                transform: scale(1);
+              }
+            }
+            #card3 {
+              position: absolute;
+              right: 50px;
+              bottom: -650px;
+              background-color: transparent;
+              transition: .3s;
+                }
+          #card3:hover {
+                  animation: pulse 1s infinite;
+                  transition: .3s;
+                }
+                @keyframes pulse {
+                  0% {
+                    transform: scale(1);
+                  }
+                  70% {
+                    transform: scale(.9);
+                  }
+                    100% {
+                    transform: scale(1);
+                  }
+                }
+                #card4 {
+                  position: absolute;
+                  right: 1175px;
+                  bottom: -700px;
+                  background-color: transparent;
+                  transition: .3s;
+                    }
+              #card4:hover {
+                      animation: pulse 1s infinite;
+                      transition: .3s;
+                    }
+                    @keyframes pulse {
+                      0% {
+                        transform: scale(1);
+                      }
+                      70% {
+                        transform: scale(.9);
+                      }
+                        100% {
+                        transform: scale(1);
+                      }
+                    }

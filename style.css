@@ -80,6 +80,25 @@ nav .fa {
     padding: 30px;
 }
 .contain {
-    width: 75%;
+    width: 90%;
+}
+#card1, #card2, #card3, #card4 {
+  height: 150px;
+}
+#card1 {
+  right: 130px;
+  bottom: -130px;
+}
+#card2 {
+  right: -105px;
+  bottom: -380px;
+}
+#card3 {
+  right: 175px;
+  bottom: -460px;
+}
+#card4 {
+  right: -145px;
+  bottom: -840px;
 }
   }
